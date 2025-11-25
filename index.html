@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najmiddin Hamroqulov - Python Backend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <canvas id="particleCanvas"></canvas>
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">NH</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#skills" class="mobile-link">Skills</a></li>
+            <li><a href="#projects" class="mobile-link">Projects</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    Backend Developer
+                </div>
+                <h1 class="hero-title gradient-text">Najmiddin Hamroqulov</h1>
+                <p class="hero-subtitle">Python Backend Developer</p>
+                <p class="hero-description">
+                    Professional backend developer with expertise in building scalable, high-performance web applications. 
+                    Specializing in Django framework, database optimization, and cloud infrastructure.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">
+                        <span>View My Work</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <span>Contact Me</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content glass-card">
+                <p class="about-text">
+                    Men Python backend development sohasida tajribaga ega dasturchiman. Real loyihalarda ishtirok etib, 
+                    turli murakkablikdagi web dasturlar va API'lar yaratganman. Django framework'i yordamida 
+                    samarali va xavfsiz backend tizimlar qurish, ma'lumotlar bazasini optimallashtirish va 
+                    cloud texnologiyalari bilan ishlash bo'yicha kuchli bilimga egaman.
+                </p>
+                <p class="about-text">
+                    Har bir loyihada kod sifatiga, ma'lumotlar xavfsizligiga va performance'ga alohida e'tibor 
+                    beraman. Doimiy o'rganish va yangi texnologiyalarni o'zlashtirishga intilaman. Jamoa bilan 
+                    ishlash, Git orqali kod versiyalarini boshqarish va Linux muhitida ishlay olishim 
+                    professional rivojlanishimning muhim qismidir.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item glass-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
+                    <span class="skill-name">Django</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                    </div>
+                    <span class="skill-name">Django ORM</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                    </div>
+                    <span class="skill-name">PostgreSQL</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+                            <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+                            <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <span class="skill-name">SQLite</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 82%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <span class="skill-name">HTML/CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M12 1v6m0 6v6m5.2-14.8l-4.2 4.2m0 5.2l4.2 4.2M23 12h-6m-6 0H5m14.8 5.2l-4.2-4.2m-5.2 0l-4.2 4.2"></path>
+                        </svg>
+                    </div>
+                    <span class="skill-name">Git</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <span class="skill-name">Linux</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 78%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                        </svg>
+                    </div>
+                    <span class="skill-name">AWS</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </div>
+                    <span class="skill-name">REST API</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 92%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            <circle cx="9" cy="10" r="1"></circle>
+                            <circle cx="15" cy="10" r="1"></circle>
+                            <path d="M9 14s1 1 3 1 3-1 3-1"></path>
+                        </svg>
+                    </div>
+                    <span class="skill-name">Aiogram</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-number">01</div>
+                    <h3 class="project-title">Course Control</h3>
+                    <p class="project-description">
+                        O'quv markazlari uchun to'liq avtomatlashtirilgan boshqaruv tizimi. Telegram bot va web sayt birgalikda ishlaydi. 
+                        Talabalar ro'yxatidan tutib, to'lovlar nazorati, dars jadvali va o'qituvchilar boshqaruvi kabi barcha jarayonlarni avtomatlashtiradi.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">Aiogram</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">REST API</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-number">02</div>
+                    <h3 class="project-title">TeamX</h3>
+                    <p class="project-description">
+                        O'quv markaz boshqaruv tizimi. Talabalar va guruhlar monitoringi, davomat nazorati, 
+                        moliyaviy hisobotlar, o'qituvchilar ish faoliyati tahlili va avtomatik hisobot tizimi.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">AWS</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-number">03</div>
+                    <h3 class="project-title">Olimpiada Registration</h3>
+                    <p class="project-description">
+                        Olimpiadalar uchun maxsus registratsiya veb-sayti. Ishtirokchilar ro'yxatdan o'tishi, 
+                        ma'lumotlarni to'g'ri shaklda to'plash, admin panel orqali qatnashchilarni boshqarish va hisobotlarni eksport qilish imkoniyati.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">jQuery</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-number">04</div>
+                    <h3 class="project-title">Telegram Bots Collection</h3>
+                    <p class="project-description">
+                        Turli maqsadlardagi Telegram botlar to'plami. Avtomatik xabar yuborish, 
+                        ma'lumotlar to'plash, foydalanuvchilar bilan interaktiv muloqot va integratsiyalar. 
+                        Har biri o'z vazifasini professional darajada bajaradi.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Aiogram</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">API Integration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    Loyiha bo'yicha hamkorlik yoki savol-javob uchun bog'lanishingiz mumkin. 
+                    Har qanday aloqa usulini tanlang va men tez orada javob beraman.
+                </p>
+                <div class="contact-grid">
+                    <a href="mailto:najmiddinhamroqulov44001@gmail.com" class="contact-card glass-card">
+                        <svg class="contact-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <div class="contact-info">
+                            <h3 class="contact-label">Email</h3>
+                            <p class="contact-value">najmiddinhamroqulov44001@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/najmiddin_hamroqulov" target="_blank" class="contact-card glass-card">
+                        <svg class="contact-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <div class="contact-info">
+                            <h3 class="contact-label">Telegram</h3>
+                            <p class="contact-value">@najmiddin_hamroqulov</p>
+                        </div>
+                    </a>
+
+                    <a href="tel:+998914441139" class="contact-card glass-card">
+                        <svg class="contact-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <div class="contact-info">
+                            <h3 class="contact-label">Phone</h3>
+                            <p class="contact-value">+998 91 444 11 39</p>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/najmiddinhamroqulov" target="_blank" class="contact-card glass-card">
+                        <svg class="contact-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                        <div class="contact-info">
+                            <h3 class="contact-label">GitHub</h3>
+                            <p class="contact-value">@najmiddinhamroqulov</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 Najmiddin Hamroqulov. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
